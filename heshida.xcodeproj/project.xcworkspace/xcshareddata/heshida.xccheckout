@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65D13B01-4364-4FAA-B70F-B84B38FD4846</string>
+	<key>IDESourceControlProjectName</key>
+	<string>heshida</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6DF97F08007A7CD7AF352878EAA7CB248E0B9EBA</key>
+		<string>github.com:lichanghong/heshida.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>heshida.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6DF97F08007A7CD7AF352878EAA7CB248E0B9EBA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:lichanghong/heshida.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6DF97F08007A7CD7AF352878EAA7CB248E0B9EBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6DF97F08007A7CD7AF352878EAA7CB248E0B9EBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>heshida</string>
+		</dict>
+	</array>
+</dict>
+</plist>
