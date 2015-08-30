@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951FE4AF1B89BA68008DF72E /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 951FE4AE1B89BA68008DF72E /* title@2x.png */; };
+		951FE4B51B89C088008DF72E /* HHDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE4B41B89C088008DF72E /* HHDataUtil.m */; };
+		951FE4BA1B89CB82008DF72E /* HotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FE4B91B89CB82008DF72E /* HotTableViewCell.m */; };
+		951FE4BC1B89CFA5008DF72E /* testHot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 951FE4BB1B89CFA5008DF72E /* testHot.jpg */; };
+		9528A37D1B92DB4900CE755B /* test.ini in Resources */ = {isa = PBXBuildFile; fileRef = 9528A37C1B92DB4900CE755B /* test.ini */; };
 		953B791B1B77355C00C2BA71 /* LoginViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953B791A1B77355C00C2BA71 /* LoginViewViewController.m */; };
 		953B791E1B77363400C2BA71 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953B791D1B77363400C2BA71 /* RegisterViewController.m */; };
 		953B79241B77386800C2BA71 /* ClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 953B79231B77386800C2BA71 /* ClubViewController.m */; };
@@ -47,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		951FE4AE1B89BA68008DF72E /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
+		951FE4B31B89C088008DF72E /* HHDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDataUtil.h; sourceTree = "<group>"; };
+		951FE4B41B89C088008DF72E /* HHDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDataUtil.m; sourceTree = "<group>"; };
+		951FE4B61B89C1C2008DF72E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		951FE4B81B89CB82008DF72E /* HotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotTableViewCell.h; sourceTree = "<group>"; };
+		951FE4B91B89CB82008DF72E /* HotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotTableViewCell.m; sourceTree = "<group>"; };
+		951FE4BB1B89CFA5008DF72E /* testHot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testHot.jpg; sourceTree = "<group>"; };
+		9528A37C1B92DB4900CE755B /* test.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ini; sourceTree = "<group>"; };
 		953B79191B77355C00C2BA71 /* LoginViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewViewController.h; sourceTree = "<group>"; };
 		953B791A1B77355C00C2BA71 /* LoginViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewViewController.m; sourceTree = "<group>"; };
 		953B791C1B77363400C2BA71 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -106,6 +119,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951FE4B21B89C073008DF72E /* 测试数据 */ = {
+			isa = PBXGroup;
+			children = (
+				951FE4B31B89C088008DF72E /* HHDataUtil.h */,
+				951FE4B41B89C088008DF72E /* HHDataUtil.m */,
+				9528A37C1B92DB4900CE755B /* test.ini */,
+			);
+			name = "测试数据";
+			sourceTree = "<group>";
+		};
+		951FE4B71B89CB5E008DF72E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				951FE4B81B89CB82008DF72E /* HotTableViewCell.h */,
+				951FE4B91B89CB82008DF72E /* HotTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		953B79181B77353A00C2BA71 /* 登陆注册 */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +161,7 @@
 		953B79201B77373D00C2BA71 /* 热门话题 */ = {
 			isa = PBXGroup;
 			children = (
+				951FE4B71B89CB5E008DF72E /* Cells */,
 				953B79251B773D8800C2BA71 /* HotViewController.h */,
 				953B79261B773D8800C2BA71 /* HotViewController.m */,
 			);
@@ -147,6 +180,8 @@
 		953B79311B7A31A700C2BA71 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				951FE4BB1B89CFA5008DF72E /* testHot.jpg */,
+				951FE4AE1B89BA68008DF72E /* title@2x.png */,
 				953B79501B7A4BB500C2BA71 /* more.png */,
 				953B79511B7A4BB500C2BA71 /* more@2x.png */,
 				953B794C1B7A4A9C00C2BA71 /* 112-group.png */,
@@ -194,6 +229,7 @@
 		9545EE7C1B771DA9009508E1 /* heshida */ = {
 			isa = PBXGroup;
 			children = (
+				951FE4B21B89C073008DF72E /* 测试数据 */,
 				953B79441B7A47B700C2BA71 /* 校园网 */,
 				953B79311B7A31A700C2BA71 /* images */,
 				953B79211B77374900C2BA71 /* 更多 */,
@@ -205,6 +241,7 @@
 				9545EE871B771DA9009508E1 /* ViewController.h */,
 				9545EE881B771DA9009508E1 /* ViewController.m */,
 				9545EE8A1B771DA9009508E1 /* Main.storyboard */,
+				951FE4B61B89C1C2008DF72E /* PrefixHeader.pch */,
 				9545EE8D1B771DA9009508E1 /* Images.xcassets */,
 				9545EE8F1B771DA9009508E1 /* LaunchScreen.xib */,
 				9545EE841B771DA9009508E1 /* heshida.xcdatamodeld */,
@@ -321,8 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				953B793E1B7A359500C2BA71 /* tab_mine_l@2x.png in Resources */,
+				951FE4AF1B89BA68008DF72E /* title@2x.png in Resources */,
 				953B794A1B7A4A3A00C2BA71 /* news.png in Resources */,
+				951FE4BC1B89CFA5008DF72E /* testHot.jpg in Resources */,
 				953B793B1B7A359500C2BA71 /* index.png in Resources */,
+				9528A37D1B92DB4900CE755B /* test.ini in Resources */,
 				953B79431B7A394200C2BA71 /* tab_feed@2x.png in Resources */,
 				953B794E1B7A4A9C00C2BA71 /* 112-group.png in Resources */,
 				953B793C1B7A359500C2BA71 /* logo.png in Resources */,
@@ -359,10 +399,12 @@
 				953B791B1B77355C00C2BA71 /* LoginViewViewController.m in Sources */,
 				953B792A1B77413400C2BA71 /* MoreViewController.m in Sources */,
 				9545EE831B771DA9009508E1 /* AppDelegate.m in Sources */,
+				951FE4B51B89C088008DF72E /* HHDataUtil.m in Sources */,
 				9545EE891B771DA9009508E1 /* ViewController.m in Sources */,
 				953B79471B7A47CF00C2BA71 /* MainSchoolViewController.m in Sources */,
 				953B79241B77386800C2BA71 /* ClubViewController.m in Sources */,
 				9545EE801B771DA9009508E1 /* main.m in Sources */,
+				951FE4BA1B89CB82008DF72E /* HotTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +532,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = heshida/PrefixHeader.pch;
 				INFOPLIST_FILE = heshida/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,6 +549,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = heshida/PrefixHeader.pch;
 				INFOPLIST_FILE = heshida/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

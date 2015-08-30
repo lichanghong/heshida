@@ -8,21 +8,52 @@
 
 #import "HotViewController.h"
 
-@interface HotViewController ()
+@interface HotViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
+
 @implementation HotViewController
+{
+    NSMutableArray *contentArr;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    contentArr = [NSMutableArray arrayWithObject:@"test"];
     // Do any additional setup after loading the view.
 }
-
+//
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return contentArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *schoolIdentifier = @"hot_theame_cell_identifier";
+    UITableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:schoolIdentifier forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 
 /*
 #pragma mark - Navigation

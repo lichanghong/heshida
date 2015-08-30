@@ -8,19 +8,47 @@
 
 #import "ClubViewController.h"
 
-@interface ClubViewController ()
+@interface ClubViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
 @implementation ClubViewController
+{
+    NSArray *contentArr;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    contentArr = [HHDataUtil studentsUnit];
     // Do any additional setup after loading the view.
 }
 
 - (IBAction)didClickAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+//
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return contentArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *schoolIdentifier = @"studentunion_activity_cell_identifier";
+    UITableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:schoolIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = contentArr[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 
