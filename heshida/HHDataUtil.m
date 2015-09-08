@@ -32,9 +32,39 @@
 }
 
 
+//接口测试入口----------------------------------------
++ (void)getTest
+{
+    //如果接口是本地的，传NO，@“”  如果是网络接口：YES，@“网络url”
+    [HHDataUtil testNet:YES url:@"http://www.ezhi.net/api/test/index.php"];
+}
 
++ (void)testNet:(BOOL)isNet url:(NSString *)urlstr
+{
+    if (!isNet) {
+        [self test_local_text];
+    }
+    else
+        [self test_Net_text:urlstr];
+}
+//测试本地接口数据
++ (void)test_local_text
+{
+    NSString *filePath= [[NSBundle mainBundle]pathForResource:@"test" ofType:@"ini"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSLog(@"json local text = %@",jsonObj);
+}
 
-
+//测试网络接口数据
++ (void)test_Net_text:(NSString *)stringURL
+{
+    NSURL *url = [NSURL URLWithString:stringURL];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSLog(@"json net text = %@",jsonObj);
+}
+//---------------------------end test----------
 
 
 

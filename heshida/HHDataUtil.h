@@ -20,5 +20,6 @@
 +(NSArray *)moreInfos;
 
 
++ (void)getTest;
 
 @end
