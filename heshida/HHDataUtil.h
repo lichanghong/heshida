@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface HHDataUtil : NSObject
-+ (id)studentsUnit;
 
+//学生会列表
++ (NSArray *)studentsUnit;
 
+//校园网功能列表
++(NSArray *)schoolItems;
 
-
+//更多信息
++(NSArray *)moreInfos;
 
 
 

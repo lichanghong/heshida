@@ -8,14 +8,19 @@
 
 #import "MainSchoolViewController.h"
 
-@interface MainSchoolViewController ()
+@interface MainSchoolViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
+
 @implementation MainSchoolViewController
+{
+    NSArray *contentArr;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    contentArr = [HHDataUtil schoolItems];
     // Do any additional setup after loading the view.
 }
 
@@ -23,6 +28,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return contentArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *schoolIdentifier = @"school_cell_identifier";
+    UITableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:schoolIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = contentArr[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+ 
+}
+
+
 
 /*
 #pragma mark - Navigation
