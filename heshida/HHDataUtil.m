@@ -7,6 +7,7 @@
 //
 
 #import "HHDataUtil.h"
+ 
 
 @implementation HHDataUtil
 
@@ -59,10 +60,10 @@
 //测试网络接口数据
 + (void)test_Net_text:(NSString *)stringURL
 {
-    NSURL *url = [NSURL URLWithString:stringURL];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    NSLog(@"json net text = %@",jsonObj);
+//    NSURL *url = [NSURL URLWithString:stringURL];
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//    id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+//    NSLog(@"json net text = %@",jsonObj);
 }
 //---------------------------end test----------
 
